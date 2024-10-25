@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
+  React.useEffect(() => {
+    window.location.href = 'https://qff2024-bitsgoa.vercel.app';
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* You can add a temporary message here while redirecting (optional) */}
+      <p>Redirecting to QFF 2024...</p>
     </div>
   );
 }
